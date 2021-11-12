@@ -12,6 +12,8 @@ let Child = function (name, sureName, age) {
     this.age = age;
 }
 
+Child.prototype = Object.create(Person.prototype);
+
 Child.prototype.getChildInfo = function () {
     return `name = ${this.name}, sureName = ${this.sureName}, age = ${this.age}`;
 }
