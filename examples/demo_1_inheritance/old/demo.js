@@ -13,6 +13,7 @@ let Child = function (name, sureName, age) {
 }
 
 Child.prototype = Object.create(Person.prototype);
+Child.prototype.constructor = Child;
 
 Child.prototype.getChildInfo = function () {
     return `name = ${this.name}, sureName = ${this.sureName}, age = ${this.age}`;
