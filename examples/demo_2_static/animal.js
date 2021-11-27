@@ -1,13 +1,13 @@
 class Animal {
 
-    static type = 'Animal';
+    static type = 'Fish';
 
     constructor(size) {
         this.size = size;
     }
 
     static getType() {
-        return this.type;
+        return 'Bird';
     }
 }
 
