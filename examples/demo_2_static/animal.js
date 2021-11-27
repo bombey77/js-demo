@@ -1,16 +1,19 @@
 class Animal {
 
-    static type = 'Fish';
-
-    constructor(size) {
-        this.size = size;
-    }
+    static type = 'Parrot';
 
     static getType() {
         return 'Bird';
     }
 }
 
-const animal = new Animal('small');
-console.log(Animal.type);
-console.log(Animal.getType());
+console.log(Animal.type); // Parrot
+console.log(Animal.getType()); // Bird
+
+class Crocodile extends Animal {
+
+    static type = 'Reptile'; // свойство переопределено
+}
+
+console.log(Crocodile.type); // Reptile
+console.log(Crocodile.getType()); // Bird -> свойство унаследовано
