@@ -5,9 +5,9 @@ function printName(name) {
 }
 
 function callBack(name, print) {
-    setTimeout(() => {
-        print(name);
-    }, 0);
+    // setTimeout(() => {
+    //     print(name);
+    // }, 0);
     print(name);
 }
 
