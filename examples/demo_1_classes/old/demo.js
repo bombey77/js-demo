@@ -1,4 +1,4 @@
-let Person = function (name, sureName) {
+function Person(name, sureName) {
     this.name = name;
     this.sureName = sureName;
 }
@@ -7,7 +7,7 @@ Person.prototype.getInfo = function () {
     return `name = ${this.name}, sureName = ${this.sureName}`;
 }
 
-let Child = function (name, sureName, age) {
+function Child(name, sureName, age) {
     Person.call(this, name, sureName);
     this.age = age;
 }
